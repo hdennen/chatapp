@@ -4,7 +4,7 @@ var server = require('http').createServer(app);
 var io = require('socket.io').listen(server);
 var nicknames = [];
 
-server.listen(80);
+server.listen(3000);
 
 app.get('/', function(req, res){ //send the home page
 	res.sendFile(__dirname +'/index.html');
